@@ -2,17 +2,8 @@
 
 ## What this project is
 
-A company workspace that gives your AI coding agent a shared memory and reusable workflows.
-It keeps your company profile, research, connected-account notes, and skills in readable files
-that you own and can build on over time.
-
-Start with your company URL. Your agent researches the business, saves a sourced overview, and
-guides you through optional connections one question at a time. Auto-save stays off unless you
-choose to connect your own repository.
-
-Bring a coding agent with file and terminal access, plus Git and Python 3.9+. Public web access
-helps with research; you can also provide company information directly. No paid API, business
-integration, or background service is required.
+A workspace that gives your AI agent company knowledge and reusable workflows in files you own.
+Start with your company URL, and your agent will research the business and guide you through setup.
 
 ## Copy-and-paste install
 
