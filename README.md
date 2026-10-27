@@ -8,8 +8,12 @@ Copy this prompt into your coding agent:
 Download https://github.com/russelltaylor05/ecom-brain into a new local folder for my company.
 Use a Git clone and choose an unused folder; do not overwrite an existing project.
 Remove the starter's origin remote so this copy cannot push back to the template repository.
-Then work inside the new folder, read AGENTS.md, and follow skills/eb-setup/SKILL.md to start
-setup. Ask me one question at a time and wait for my answer. Keep auto-save off unless I
+After downloading, open the new project in a fresh agent context if your environment supports
+it. Otherwise continue in the current context with the new folder as your working directory;
+do not claim the context was reset. In either case, read the downloaded project's AGENTS.md
+and the startup files it references before beginning setup. Follow those project instructions
+and skills/eb-setup/SKILL.md. Ask me one question at a time and wait for my answer.
+Keep auto-save off unless I
 explicitly enable it and we verify a repository I control. Finish by showing me the local
 project path and how to reopen it.
 ```
@@ -23,7 +27,8 @@ required. No paid API, business integration, or background service is required.
 
 1. Create your own repository from these files (or a GitHub template), then clone your copy.
    If you cloned the starter directly, point `origin` at your own repository before enabling push.
-2. Open the folder in your coding agent.
+2. Open the folder in your coding agent, preferably in a fresh session. Read its AGENTS.md and
+   the startup files it references before beginning setup; a new session is optional.
 3. Follow [project setup](skills/eb-setup/SKILL.md). Agents that read AGENTS.md start it
    automatically. To start or resume, say: **Read skills/eb-setup/SKILL.md and set up this project.**
 
