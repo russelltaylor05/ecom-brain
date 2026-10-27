@@ -1,4 +1,4 @@
-# 🧠 Ecom Brain
+# Brain Skeleton
 
 ## What this project is
 
