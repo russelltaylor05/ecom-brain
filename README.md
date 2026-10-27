@@ -1,11 +1,11 @@
 # 🧠 Ecom Brain
 
-## What this project is
+## About
 
 A workspace that gives your AI agent company knowledge and reusable workflows in files you own.
 Start with your company URL, and your agent will research the business and guide you through setup.
 
-## Create your company workspace
+## Setup
 
 1. Choose where you want to keep your company workspace and create an empty folder there.
 2. Open that folder as a project in your coding agent, then start a new chat in it.
