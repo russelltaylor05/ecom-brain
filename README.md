@@ -1,5 +1,19 @@
 # Brain Skeleton
 
+## Set up with your agent
+
+Copy this prompt into your coding agent:
+
+```text
+Download https://github.com/russelltaylor05/ecom-brain into a new local folder for my company.
+Use a Git clone and choose an unused folder; do not overwrite an existing project.
+Remove the starter's origin remote so this copy cannot push back to the template repository.
+Then work inside the new folder, read AGENTS.md, and follow skills/eb-setup/SKILL.md to start
+setup. Ask me one question at a time and wait for my answer. Keep auto-save off unless I
+explicitly enable it and we verify a repository I control. Finish by showing me the local
+project path and how to reopen it.
+```
+
 A small, company-agnostic workspace for an AI agent to maintain company knowledge and project
 skills. Bring your own coding agent with file and terminal access. Public web access helps build
 the company profile; manual setup works without it. Git and Python 3.9+ are the only local tools
