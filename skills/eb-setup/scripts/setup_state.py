@@ -186,7 +186,9 @@ def run(root, action, patch=None):
                 for line in path.read_text().splitlines()):
             raise ValueError('Write the sourced profile with Status: Researched before recording it')
         state['profile_sha256'] = profile_hash(root)
-        state['complete'] = False
+        # Recording a later profile edit must not reopen completed onboarding. Answer
+        # changes still invalidate completion in update; initial setup stays incomplete.
+        state['complete'] = state['complete'] and not missing(root, state)
         save(root, state)
     elif action == 'complete':
         pending = missing(root, state)

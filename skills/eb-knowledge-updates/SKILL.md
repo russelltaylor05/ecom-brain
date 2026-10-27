@@ -18,16 +18,25 @@ For automatic SKILLS.md maintenance, follow
 [eb-skill-authoring](../eb-skill-authoring/SKILL.md). The approval guidance below applies to
 company and connection knowledge, not routine skill-index maintenance.
 
-Ask one question at a time across the conversation. Wait for the answer before asking another;
-keep unrelated proposals for later. Related edits may share one yes/no approval when they form
-one clear decision. Show the destinations, exact proposed wording, and why the edits matter.
-Guide the user as through a simple form: give only the context needed to decide, ask a concise
-question, and wait for their answer or explicit deferral before continuing the proposal. Do not
-narrate internal deliberation or repeat the justification in progress updates or the final response.
-Batch already-authorized work without asking again. A likely yes or silence is not approval.
-Follow AGENTS.md for root knowledge updates. An explicit request for an edit
-counts as approval; discovering information or creating a skill alone does not.
-Keep any proposal concise and wait for the user's decision.
+AGENTS.md owns the approval boundary for company and connection updates. Use its existing
+authorization rather than adding another approval gate in this skill.
+
+Present one decision at a time with the destination, exact proposed wording, and a short business
+reason when useful. For example: `May I add "Every order includes free gift wrapping" to
+COMPANY.md so future copy includes it?` Related edits may share one decision. Keep the question
+focused on the proposed change; do not append skill links, instruction quotes, or internal-rule
+explanations. Wait for the answer before presenting another proposal. Apply an explicitly
+requested edit without asking for the same permission again.
+
+After an authorized COMPANY.md edit, run:
+
+```sh
+python3 skills/eb-setup/scripts/setup_state.py record-profile
+```
+
+This refreshes the saved profile hash and preserves completed setup when its required inputs
+remain valid. It does not complete unfinished setup. Do not rerun onboarding or reset answers
+for an ordinary knowledge update.
 
 Save supporting evidence and user decisions in the relevant research file under AGENTS.md's
 shared knowledge rules. Record declined or deferred proposals there briefly. Do not repeat a

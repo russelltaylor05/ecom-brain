@@ -89,8 +89,10 @@ restart company onboarding.
 Guide the user as through a simple onboarding form. Give only the context needed to answer,
 ask one clear question, and wait for their answer or explicit deferral before continuing.
 The opening company-name-and-website question is one grouped identification step.
-Keep progress summaries brief and relevant. Do not narrate question ordering, quote workflow
-rules, or repeat internal checklist state as justification for a routine setup question.
+Keep progress summaries brief and relevant. Start a fresh setup with the identification question
+itself; do not preface it with inspection results or labels such as "fresh trial" or "blank
+workspace." Do not narrate question ordering, quote workflow rules, or repeat internal checklist
+state as justification for a routine setup question.
 
 When presenting choices, use a numbered list (1, 2, 3, and so on), with one option per line.
 Number option labels in question tools too. Accept either the number or the option text as the
@@ -382,7 +384,12 @@ Follow [eb-knowledge-updates](../eb-knowledge-updates/SKILL.md) to show proposed
 entries and get approval before writing them. Ask only one question at a time. Related verified
 entries may share one approval. Never record credentials.
 
-### Shopify detection and access
+### Existing Shopify connection
+
+Shopify onboarding reviews access already connected to the user's agent. Scan existing tools
+and documented project access, verify the store identity, and ask the user to confirm the store.
+Creating a Shopify connection, installing a connector, requesting credentials, and guiding login
+or authentication are outside this onboarding step.
 
 During company research, look for public Shopify signals in the supplied storefront, such as
 Shopify asset or checkout references and a linked myshopify domain. A custom storefront may hide
@@ -402,24 +409,23 @@ If company store access is verified and not already recorded, show a proposed CO
 entry with the store identity, access method, verified permissions or limits, verification date,
 and credential variable name if needed (never its value). Then ask:
 
-Add this Shopify connection to CONNECTIONS.md?
+Is this the correct store, and may I record this connection in CONNECTIONS.md?
 
-1. Add the verified connection.
+1. Confirm and record this store.
 2. Skip for now.
 
 Wait for the answer before saving the entry. If the store does not clearly match the company,
 ask which store is intended before proposing it.
 
-If Shopify is detected but authenticated access is missing, make it the next connection decision:
-“Your store appears to use Shopify. Would you like help connecting it, or skip for now?”
-Offer only a connection method supported by the environment. If none exists, state that briefly
-and ask whether to defer Shopify. If the platform is unknown and the company has an online store,
-ask “Does your store use Shopify?” before proposing setup. Respect an existing answer or explicit
-skip. Do not request secrets in chat or start an installation or login flow without authorization.
-After resolving this Shopify decision, continue reviewing the other available connections.
-Do not silently bury Shopify as a gap beneath unrelated connection approvals.
+If no existing Shopify access can be verified, briefly state what was checked and record Shopify
+as unavailable or deferred in setup progress. Continue reviewing other existing connections without
+requiring a deferral answer or offering connection setup. An unknown storefront platform does not
+require a platform question just to scan for existing access. Public signals alone never establish
+authenticated access. If the user later connects Shopify through their agent, rerun the identity
+check and store confirmation. Honor an existing confirmation or explicit skip.
 
-When no company account is verified, keep guiding the user. If a check found a candidate account
+For services other than Shopify, when no company account is verified, keep guiding the user.
+If a check found a candidate account
 or store whose ownership is unclear, ask whether it is the intended company account. If access
 is missing, briefly state what is available and ask which supported service they want help
 connecting, with an option to skip for now. Offer only services supported by available tools or
@@ -432,6 +438,10 @@ outcome of no verified connections or declined additions. If access is unavailab
 is pending, leave it unchecked with a brief next action. Keep supporting evidence in research/.
 
 ## Completion
+
+Give the completion summary once, in the final response after the checks and approved edits are
+finished. Do not announce completion in a progress message and repeat it in the final response.
+If a progress update is needed while work continues, state only what remains to be resolved.
 
 Deliver the completion summary after the connection review has an outcome: reviewed connections,
 explicitly skipped or deferred review, or a specific external blocker the user has been told how
