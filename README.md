@@ -5,23 +5,22 @@
 A workspace that gives your AI agent company knowledge and reusable workflows in files you own.
 Start with your company URL, and your agent will research the business and guide you through setup.
 
-## Copy-and-paste install
+## Create your company workspace
 
-Copy this prompt into your coding agent:
+1. Choose where you want to keep your company workspace and create an empty folder there.
+2. Open that folder as a project in your coding agent, then start a new chat in it.
+3. Paste this prompt:
 
 ```text
-Clone https://github.com/russelltaylor05/ecom-brain into a new, unused local folder.
-Work inside it, read AGENTS.md, and follow skills/eb-setup/SKILL.md to set up my company.
+Download https://github.com/russelltaylor05/ecom-brain into this project folder, without
+creating a nested folder. If it contains existing files, ask before proceeding.
+Read AGENTS.md and follow skills/eb-setup/SKILL.md to set up my company.
 ```
 
-## Start here
+Your agent will ask for your company URL and guide you through setup. Auto-save starts off.
 
-1. Create your own repository from these files (or a GitHub template), then clone your copy.
-   If you cloned the starter directly, point `origin` at your own repository before enabling push.
-2. Open the folder in your coding agent, preferably in a fresh session. Read its AGENTS.md and
-   the startup files it references before beginning setup; a new session is optional.
-3. Follow [project setup](skills/eb-setup/SKILL.md). Agents that read AGENTS.md start it
-   automatically. To start or resume, say: **Read skills/eb-setup/SKILL.md and set up this project.**
+Already cloned the repository? Open your chosen clone as a project and say:
+**Read AGENTS.md and resume this project.**
 
 ## What is included
 

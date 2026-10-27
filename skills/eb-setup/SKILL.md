@@ -32,6 +32,19 @@ COMPANY.md content. Each machine must confirm its own saving preferences and pus
 
 ## Initialize a downloaded project
 
+The user chooses the project location before installation: they create a folder, open it as a
+project in their coding agent, and paste the README prompt. Use that selected folder as the
+project root. Do not choose another location, create a nested starter folder, or treat a parent
+folder as the company workspace. If no project folder is selected or its location is ambiguous,
+ask the user to choose and open one before downloading.
+
+For an installation request, inspect the selected folder, including hidden files. Download the
+starter directly into an empty folder (for example, `git clone <starter-url> .`). If it contains
+existing files or Git metadata, ask before proceeding; do not overwrite, delete, merge, or
+replace them implicitly. If the files already form this company workspace and the user asks to
+resume, follow saved progress instead of downloading again. Never initialize the development
+repository as a company workspace.
+
 For a newly downloaded starter, work from its root and read its AGENTS.md and the startup files
 it references before researching or configuring the company. Use a fresh agent context when the
 host supports it; carry only the project path and the user's setup request and supplied answers.
