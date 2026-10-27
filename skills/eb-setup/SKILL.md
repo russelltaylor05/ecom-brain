@@ -30,6 +30,25 @@ creating files. Local answers and saving preferences live in ignored `.brain/set
 Do not delete that file to restart; update only answers the user wants changed. Preserve existing
 COMPANY.md content. Each machine must confirm its own saving preferences and push destination.
 
+## Initialize a downloaded project
+
+For a newly downloaded starter, work from its root and read its AGENTS.md and the startup files
+it references before researching or configuring the company. Use a fresh agent context when the
+host supports it; carry only the project path and the user's setup request and supplied answers.
+Otherwise continue in the current context with this project as the working directory. Never claim
+a context reset occurred when it did not. Do not require a fresh context to proceed.
+
+Before synchronization or any Git write, inspect the remotes. In a fresh, unconfigured starter
+clone, remove `origin` if its fetch or push destination is the distribution repository
+`https://github.com/russelltaylor05/ecom-brain` (including equivalent SSH URLs). This avoids
+accidental synchronization with the template. Removing the remote does not prevent an explicit
+URL push; never push company work to the distribution repository. Preserve a user's own remote
+and existing company configuration. Cloning the starter does not authorize commits or pushes.
+Follow the saving defaults and interview rules below rather than asking for saving preferences.
+
+At completion, show the absolute local project path and explain how to reopen it in the user's
+agent app. Suggest: “Read AGENTS.md and resume this project.”
+
 ## First-run entry
 
 Use this workflow automatically when startup status is incomplete and the user is starting the
