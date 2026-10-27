@@ -1,0 +1,550 @@
+[
+  {
+    "id": "1.1",
+    "question": "Your name, your business name, your website.",
+    "guidance": []
+  },
+  {
+    "id": "1.2",
+    "question": "Where you're located (city, state) and your time zone.",
+    "guidance": []
+  },
+  {
+    "id": "1.3",
+    "question": "Who is on camera?",
+    "guidance": [
+      "You, a partner, an employee, your kids, your spouse, nobody. Be specific about who is willing to be filmed and who is off limits."
+    ]
+  },
+  {
+    "id": "1.4",
+    "question": "Fill in the sentence.",
+    "guidance": [
+      "We help [who] get [what result] without [what they hate]."
+    ]
+  },
+  {
+    "id": "1.5",
+    "question": "What stage are you at?",
+    "guidance": [
+      "One line. Revenue per month (a range is fine), months in business, customers so far."
+    ]
+  },
+  {
+    "id": "2.1",
+    "question": "Every product you sell.",
+    "guidance": [
+      "For each one: the name, the price written as $X.XX, the page it lives on, and one sentence in this shape. \"It delivers [solution] for [who], from [their struggle] to [the outcome], so they can [the benefit].\""
+    ]
+  },
+  {
+    "id": "2.2",
+    "question": "Your best seller, and why you think it's the best seller.",
+    "guidance": []
+  },
+  {
+    "id": "2.3",
+    "question": "Bundles, kits, or multi-packs, with prices.",
+    "guidance": []
+  },
+  {
+    "id": "2.4",
+    "question": "Free shipping threshold, if any.",
+    "guidance": []
+  },
+  {
+    "id": "2.5",
+    "question": "Guarantee, trial, or return policy, in the exact words you use on your site.",
+    "guidance": []
+  },
+  {
+    "id": "2.6",
+    "question": "Anything you give away for free.",
+    "guidance": [
+      "A guide, a sample, a template. What it's called, where it lives, what it's for."
+    ]
+  },
+  {
+    "id": "2.7",
+    "question": "The ONE thing you want these videos to sell.",
+    "guidance": [
+      "Pick one. If every video points at a different thing, none of them work."
+    ]
+  },
+  {
+    "id": "2.8",
+    "question": "Where the call to action goes.",
+    "guidance": [
+      "Link in bio, a specific page, a comment keyword, a DM. If you use a keyword tool like ManyChat, list every keyword you have live and what it sends."
+    ]
+  },
+  {
+    "id": "3.1",
+    "question": "What is physically true about the product.",
+    "guidance": [
+      "Materials, ingredients, dimensions, sizes, colors, weights."
+    ]
+  },
+  {
+    "id": "3.2",
+    "question": "What it does that the alternatives don't.",
+    "guidance": [
+      "Plain words. No adjectives."
+    ]
+  },
+  {
+    "id": "3.3",
+    "question": "What it does NOT do.",
+    "guidance": [
+      "Every limit you know about. Where it doesn't work, who it doesn't fit, what it can't handle."
+    ]
+  },
+  {
+    "id": "3.4",
+    "question": "Claims you can and cannot make on camera.",
+    "guidance": [
+      "Patent, patent pending, food safe, non-toxic, made in, tested by, lasts X months, guaranteed. Write \"yes, can say\" or \"no, don't say\" next to each one."
+    ]
+  },
+  {
+    "id": "3.5",
+    "question": "Numbers you ARE willing to say out loud.",
+    "guidance": [
+      "Units sold, years in business, review count and rating, retail stores you're in, money spent on R&D, batches tested, customers served. Only the ones you'd say on camera to a stranger."
+    ]
+  },
+  {
+    "id": "3.6",
+    "question": "Numbers you are NOT willing to say out loud.",
+    "guidance": [
+      "So the tool never uses them."
+    ]
+  },
+  {
+    "id": "3.7",
+    "question": "Where it's made, by whom, and whether that's part of the story.",
+    "guidance": []
+  },
+  {
+    "id": "3.8",
+    "question": "Words and phrases you cannot say on camera, or hate hearing.",
+    "guidance": [
+      "Anything you stumble on, any industry acronym, any word that isn't you. One founder can't say \"EIN\" and says \"tax ID number\" instead. Write yours down."
+    ]
+  },
+  {
+    "id": "4.1",
+    "question": "Paste at least 20 reviews, raw, with the star rating.",
+    "guidance": [
+      "Paste reviews here. Unedited is better than polished. Include the bad ones."
+    ]
+  },
+  {
+    "id": "4.2",
+    "question": "Customer emails, DMs, or comments that made you feel something.",
+    "guidance": [
+      "Paste the ones you screenshotted."
+    ]
+  },
+  {
+    "id": "4.3",
+    "question": "Any customer interviews, surveys, or research.",
+    "guidance": [
+      "If a consultant wrote you a report, paste the whole report."
+    ]
+  },
+  {
+    "id": "4.4",
+    "question": "How do customers describe your product to their friends?",
+    "guidance": [
+      "If you've heard it said out loud, write it exactly how they said it."
+    ]
+  },
+  {
+    "id": "4.5",
+    "question": "What is the moment a customer decides to buy? What just happened to them?",
+    "guidance": [
+      "Examples: a kid came home with another hole in his knee. The third pair of $40 pants went in the trash this month. They were standing in a store aisle doing math."
+    ]
+  },
+  {
+    "id": "4.6",
+    "question": "What did they try before you, and why did each one fail?",
+    "guidance": [
+      "Every alternative, brand, workaround, and DIY fix you've heard of."
+    ]
+  },
+  {
+    "id": "4.7",
+    "question": "What almost stopped them from buying?",
+    "guidance": [
+      "Every objection, in their words. Price, sizing, \"will it actually work,\" \"is it gimmicky,\" \"I've been burned before.\""
+    ]
+  },
+  {
+    "id": "4.8",
+    "question": "What surprised them after they bought?",
+    "guidance": [
+      "The thing they didn't expect."
+    ]
+  },
+  {
+    "id": "4.9",
+    "question": "What did the kid say? The spouse? The friend?",
+    "guidance": [
+      "Anything a third party said about the product that a customer repeated to you."
+    ]
+  },
+  {
+    "id": "5.1",
+    "question": "Describe your best customer as one specific person.",
+    "guidance": [
+      "Age, where they live, what they do all day, what they buy, what they're tired of. Give them a name if it helps."
+    ]
+  },
+  {
+    "id": "5.2",
+    "question": "Their top three pain points, in order, in the words they'd use.",
+    "guidance": []
+  },
+  {
+    "id": "5.3",
+    "question": "The dream result.",
+    "guidance": [
+      "What life looks like when the problem is gone. Not \"peace of mind.\" The actual scene."
+    ]
+  },
+  {
+    "id": "5.4",
+    "question": "What have they given up on?",
+    "guidance": [
+      "The thing they stopped expecting to ever get fixed."
+    ]
+  },
+  {
+    "id": "5.5",
+    "question": "Any second or third customer type that's meaningfully different.",
+    "guidance": [
+      "The gift buyer, the wholesale buyer, the parent of a picky kid. Same four questions for each."
+    ]
+  },
+  {
+    "id": "5.6",
+    "question": "Where are they today?",
+    "guidance": [
+      "Pick one and say why. Most have never heard of your category. Most know the category and are comparing options. Most already know you."
+    ]
+  },
+  {
+    "id": "6.1",
+    "question": "Why you started.",
+    "guidance": [
+      "The exact moment, not the summary."
+    ]
+  },
+  {
+    "id": "6.2",
+    "question": "The first version that didn't work, and what you changed.",
+    "guidance": []
+  },
+  {
+    "id": "6.3",
+    "question": "A mistake that cost you money, and what it cost.",
+    "guidance": []
+  },
+  {
+    "id": "6.4",
+    "question": "A win you didn't expect.",
+    "guidance": []
+  },
+  {
+    "id": "6.5",
+    "question": "Something a customer did with the product that you never planned for.",
+    "guidance": []
+  },
+  {
+    "id": "6.6",
+    "question": "A time a big company, a retailer, or an expert told you no.",
+    "guidance": []
+  },
+  {
+    "id": "6.7",
+    "question": "Something funny that happened.",
+    "guidance": []
+  },
+  {
+    "id": "6.8",
+    "question": "A moment with your kid, spouse, parent, or friend that involved the product.",
+    "guidance": []
+  },
+  {
+    "id": "6.9",
+    "question": "The name of your business and where it came from.",
+    "guidance": []
+  },
+  {
+    "id": "6.10",
+    "question": "Five fun facts about you that have nothing to do with the business.",
+    "guidance": []
+  },
+  {
+    "id": "7.1",
+    "question": "Three myths in your category that you find yourself correcting.",
+    "guidance": [
+      "For each, the myth and the truth."
+    ]
+  },
+  {
+    "id": "7.2",
+    "question": "Three mistakes beginners make, and why it costs them.",
+    "guidance": []
+  },
+  {
+    "id": "7.3",
+    "question": "Three things about how your product is made, tested, or shipped that a customer would find interesting.",
+    "guidance": []
+  },
+  {
+    "id": "7.4",
+    "question": "The one question you get asked more than any other.",
+    "guidance": []
+  },
+  {
+    "id": "7.5",
+    "question": "The question you wish people asked.",
+    "guidance": []
+  },
+  {
+    "id": "8.1",
+    "question": "Record yourself for two minutes talking about your product to a friend, unscripted. Paste the transcript here.",
+    "guidance": [
+      "Paste the transcript. Don't clean it up. Any voice memo app will transcribe it."
+    ]
+  },
+  {
+    "id": "8.2",
+    "question": "Answer these five in writing, the way you'd say them out loud, not the way you'd write them for a website.",
+    "guidance": []
+  },
+  {
+    "id": "8.2a",
+    "question": "Something about your product or your customers you're passionate about.",
+    "guidance": []
+  },
+  {
+    "id": "8.2b",
+    "question": "Why should someone choose you over the alternatives?",
+    "guidance": []
+  },
+  {
+    "id": "8.2c",
+    "question": "A common misconception, explained to someone who believes it.",
+    "guidance": []
+  },
+  {
+    "id": "8.2d",
+    "question": "A recent win, challenge, or funny story, told to a friend.",
+    "guidance": []
+  },
+  {
+    "id": "8.2e",
+    "question": "\"So what do you do?\" at a party.",
+    "guidance": []
+  },
+  {
+    "id": "8.3",
+    "question": "Three words for how you want to come across, and three you never want to sound like.",
+    "guidance": []
+  },
+  {
+    "id": "8.4",
+    "question": "Do you curse on camera?",
+    "guidance": [
+      "A little, never, or freely."
+    ]
+  },
+  {
+    "id": "8.5",
+    "question": "How do you naturally end a video?",
+    "guidance": [
+      "A hard call to action, a soft one, a question to the audience, or just stopping on the last line."
+    ]
+  },
+  {
+    "id": "8.6",
+    "question": "Past tense or present tense?",
+    "guidance": [
+      "\"When I started\" or \"here's what happens when you.\" Or either."
+    ]
+  },
+  {
+    "id": "8.7",
+    "question": "Paste three sentences from your own videos or posts that sound the most like you.",
+    "guidance": []
+  },
+  {
+    "id": "9.1",
+    "question": "Every platform you post on, with the handle and the link.",
+    "guidance": []
+  },
+  {
+    "id": "9.2",
+    "question": "Your three best videos.",
+    "guidance": [
+      "Link, views, comments, and one line on why you think it worked."
+    ]
+  },
+  {
+    "id": "9.3",
+    "question": "Your three worst videos that you thought would work.",
+    "guidance": [
+      "Link and one line on what you think happened."
+    ]
+  },
+  {
+    "id": "9.4",
+    "question": "Any video that got a lot of comments, even with low views.",
+    "guidance": [
+      "Link and what the comments were about."
+    ]
+  },
+  {
+    "id": "9.5",
+    "question": "Paste the transcript of your single best video.",
+    "guidance": []
+  },
+  {
+    "id": "9.6",
+    "question": "Three creators you like in or near your space.",
+    "guidance": [
+      "Links and why."
+    ]
+  },
+  {
+    "id": "9.7",
+    "question": "Three competitors.",
+    "guidance": [
+      "Links. What they do better than you, and what you do better than them."
+    ]
+  },
+  {
+    "id": "9.8",
+    "question": "Formats you've tried, and which felt natural versus fake.",
+    "guidance": [
+      "Talking head, voiceover over footage, comparison, tutorial, story, skit, unboxing."
+    ]
+  },
+  {
+    "id": "10.1",
+    "question": "What footage you already have.",
+    "guidance": [
+      "Product close-ups, the making of it, shipping, customers using it, kids, family, the workspace, before and afters, fails. Be honest about what's on a hard drive versus what you'd have to shoot."
+    ]
+  },
+  {
+    "id": "10.2",
+    "question": "Where you can film.",
+    "guidance": [
+      "Home, workspace, warehouse, outside, a store."
+    ]
+  },
+  {
+    "id": "10.3",
+    "question": "Hard limits.",
+    "guidance": [
+      "No kids on camera, no home, no employees, no customers, no public, no acting, no trends. Every limit removes formats, so only list the real ones."
+    ]
+  },
+  {
+    "id": "10.4",
+    "question": "How much time you can give to recording per week, honestly.",
+    "guidance": []
+  },
+  {
+    "id": "10.5",
+    "question": "Do you edit, or does someone else? What tools?",
+    "guidance": []
+  },
+  {
+    "id": "11.1",
+    "question": "Topics, words, angles, or stories that are off limits.",
+    "guidance": [
+      "Politics, religion, competitors by name, family details, health claims, past business partners, anything."
+    ]
+  },
+  {
+    "id": "11.2",
+    "question": "Angles that have backfired.",
+    "guidance": [
+      "If you've ever run a message and it made customers feel bad, guilty, or defensive, describe it so it's never used again."
+    ]
+  },
+  {
+    "id": "11.3",
+    "question": "Anything sensitive about the business right now that should not come up.",
+    "guidance": [
+      "A lawsuit, a supplier issue, a recall, a partner dispute."
+    ]
+  },
+  {
+    "id": "12.1",
+    "question": "Your selling seasons, in order of importance, with the dates content needs to go live to hit them.",
+    "guidance": [
+      "Holiday content goes out eight weeks early, not the week of."
+    ]
+  },
+  {
+    "id": "12.2",
+    "question": "Anything launching in the next 90 days.",
+    "guidance": []
+  },
+  {
+    "id": "12.3",
+    "question": "Anything going out of stock or being discontinued in the next 90 days.",
+    "guidance": []
+  },
+  {
+    "id": "13.1",
+    "question": "The constraint your assessment named.",
+    "guidance": []
+  },
+  {
+    "id": "13.2",
+    "question": "The One Thing you were told to do.",
+    "guidance": []
+  },
+  {
+    "id": "13.3",
+    "question": "Where you are on it.",
+    "guidance": []
+  },
+  {
+    "id": "14.1",
+    "question": "How many scripts?",
+    "guidance": [
+      "Default is 20, four per awareness level."
+    ]
+  },
+  {
+    "id": "14.2",
+    "question": "Length?",
+    "guidance": [
+      "Under 30 seconds, 30 to 45, or up to 60."
+    ]
+  },
+  {
+    "id": "14.3",
+    "question": "Voiceover over footage, talking to camera, or a mix?",
+    "guidance": []
+  },
+  {
+    "id": "14.4",
+    "question": "Every script can come with a call to action version and a no-call-to-action version. Do you want both, or one?",
+    "guidance": []
+  },
+  {
+    "id": "14.5",
+    "question": "Anything else the writer should know that isn't in here.",
+    "guidance": []
+  }
+]
