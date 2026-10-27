@@ -31,7 +31,6 @@ Already cloned the repository? Open your chosen clone as a project and say:
 - `research/`: shared company knowledge, evidence, and decisions that all skills read and update;
   created when there is substantive material to save. COMPANY.md holds the concise overview.
 - `tmp/`: ignored drafts and output.
-- `.brain/setup.json`: ignored, machine-local setup answers and saving preferences.
 
 A fresh clone resumes the saved checklist and preserves existing company content. Automatic commits and
 pushes are opt-in on each machine. They run while an agent works; there is no hourly background job.

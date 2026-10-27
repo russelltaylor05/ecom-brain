@@ -70,18 +70,25 @@ special command. Handle an unrelated explicit request first, and honor requests 
 setup. Read the checklist in this skill even if local status is complete; resume unfinished steps without
 repeating completed work.
 
-Start with the company source. Do not check GitHub saving capability or ask about auto-save
-before company research. If no company source is supplied, ask:
-"Share your company website, storefront, or social profile and I'll build the company overview."
-Wait for that required input before researching; do not create placeholder company facts. If a link
-or description is already supplied, use it and proceed without asking again. On partial setup,
-read saved answers and research, give a brief progress summary, and continue from the next missing
-step. A missing optional GitHub configuration alone is not a reason to restart company onboarding.
+Start with the company name and website. Do not check GitHub saving capability or ask about
+auto-save before company research. When neither is supplied, ask:
+“What is your company name and website?”
+Treat these as one short company-identification step, then wait for the answer. If either is
+already supplied in chat or saved answers, ask only for the missing item. When both are available,
+proceed without asking again. Accept a storefront or social profile instead of a website; if no
+public link exists, accept a short company description. Do not create placeholder company facts.
+If the user explicitly asks you to identify the company from a supplied URL, research the name
+instead of insisting they provide it.
+
+On partial setup, read saved answers and research, give a brief progress summary, and continue
+from the next missing step. A missing optional GitHub configuration alone is not a reason to
+restart company onboarding.
 
 ## Interview and persistence
 
 Guide the user as through a simple onboarding form. Give only the context needed to answer,
 ask one clear question, and wait for their answer or explicit deferral before continuing.
+The opening company-name-and-website question is one grouped identification step.
 Keep progress summaries brief and relevant. Do not narrate question ordering, quote workflow
 rules, or repeat internal checklist state as justification for a routine setup question.
 
@@ -95,11 +102,11 @@ Add this verified connection to CONNECTIONS.md?
 1. Add the connection.
 2. Skip for now.
 
-Company input is required; GitHub and auto-save are optional. Use the first-run prompt above only
-when the company source is missing. Reuse a link supplied in chat or saved setup state. A social profile alone is enough; do not require
-a separate website or description when it provides usable evidence. Research before requesting
-other company details. Infer the company name and discover other official links from that source. Never infer the
-company from the starter repository owner or unrelated local projects.
+Company input is required; GitHub and auto-save are optional. Reuse the supplied company name
+and source, including saved answers. A social profile can replace the website when it provides
+usable evidence. Research before requesting other company details and discover official links
+from the supplied source. Never infer the company from the starter repository owner or unrelated
+local projects.
 
 Ask targeted follow-up questions only when missing or conflicting information would materially
 change the basic profile (for example, which product or business the supplied link represents).
@@ -365,18 +372,31 @@ transition, not the end of onboarding. Keep any profile summary brief while a co
 is outstanding. Do not end with only "connection review remains pending" or an invitation to
 correct the profile.
 
-After company research, inspect available connectors and documented access using read-only checks.
-Verify the intended company account before calling a connection available for company work.
+After company research, check Shopify as a primary commerce connection before reviewing general
+productivity connections such as email, Drive, or calendars. Then inspect other available
+connectors and documented access using read-only checks. Shopify is a priority to investigate,
+not a required platform or a blocker for companies that do not use it. Verify the intended
+company account before calling a connection available for company work.
 Do not install integrations or start authentication flows just to complete this step.
 Follow [eb-knowledge-updates](../eb-knowledge-updates/SKILL.md) to show proposed CONNECTIONS.md
 entries and get approval before writing them. Ask only one question at a time. Related verified
 entries may share one approval. Never record credentials.
 
-Include Shopify in this check. Look for a Shopify connector or documented API access in existing
-project skills and connection notes. Check credential availability without displaying values.
-Use a read-only shop identity request to verify the store name, myshopify domain, and primary
-domain against the company website. A public Shopify storefront alone does not prove account
-access. Record only permissions actually verified; do not test access by changing store data.
+### Shopify detection and access
+
+During company research, look for public Shopify signals in the supplied storefront, such as
+Shopify asset or checkout references and a linked myshopify domain. A custom storefront may hide
+these signals: no signal means platform unknown, not proof that Shopify is absent. Save the
+source and distinguish “Shopify storefront detected” from “authenticated store access verified.”
+
+Check available Shopify tools and documented API access in project skills and connection notes
+before declaring access unavailable. Inspect configured credential availability without displaying
+values; do not search unrelated projects for credentials. Describe what was actually checked:
+no supported tool, no documented access, missing configured credential, or a failed identity
+request. Do not claim credentials are missing merely because no connector is installed.
+Use a read-only shop identity request when access exists. Verify the store name, myshopify domain,
+and primary domain against the supplied company. Record only permissions actually verified;
+never test access by changing store data.
 
 If company store access is verified and not already recorded, show a proposed CONNECTIONS.md
 entry with the store identity, access method, verified permissions or limits, verification date,
@@ -388,8 +408,16 @@ Add this Shopify connection to CONNECTIONS.md?
 2. Skip for now.
 
 Wait for the answer before saving the entry. If the store does not clearly match the company,
-ask which store is intended before proposing it. If access is missing, report that briefly and
-leave it as a gap; do not request secrets in chat or start an installation or login flow.
+ask which store is intended before proposing it.
+
+If Shopify is detected but authenticated access is missing, make it the next connection decision:
+“Your store appears to use Shopify. Would you like help connecting it, or skip for now?”
+Offer only a connection method supported by the environment. If none exists, state that briefly
+and ask whether to defer Shopify. If the platform is unknown and the company has an online store,
+ask “Does your store use Shopify?” before proposing setup. Respect an existing answer or explicit
+skip. Do not request secrets in chat or start an installation or login flow without authorization.
+After resolving this Shopify decision, continue reviewing the other available connections.
+Do not silently bury Shopify as a gap beneath unrelated connection approvals.
 
 When no company account is verified, keep guiding the user. If a check found a candidate account
 or store whose ownership is unclear, ask whether it is the intended company account. If access
