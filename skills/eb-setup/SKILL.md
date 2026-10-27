@@ -7,16 +7,16 @@ description: Set up or resume this company workspace from a company website, sto
 
 ## Goal and user experience
 
-Help the user create a useful company workspace by setting their saving preference, building a
-sourced company overview, and reviewing available connections. Make setup feel like a simple
-onboarding form: guide the user through one clear decision at a time, provide only the context
+Help the user create a useful company workspace by starting with their company URL, building a
+sourced overview, and reviewing available connections. Mention optional auto-save at the end.
+Make setup feel like a simple onboarding form: guide the user through one clear decision at a time, provide only the context
 needed to answer, and wait for their response. Do the research and configuration work for them,
 and give a brief, useful summary of the result. Avoid exposing internal deliberation or workflow
 mechanics in routine conversation.
 
 Set up or resume this project with: **Read skills/eb-setup/SKILL.md and set up this project.**
-Progress lives in [SETUP-CHECKLIST.md](SETUP-CHECKLIST.md). Follow its three steps: auto-save,
-company research, then available connections.
+Progress lives in [SETUP-CHECKLIST.md](SETUP-CHECKLIST.md). Follow its three steps: company research,
+available connections, then a brief optional auto-save note.
 
 Check prerequisites with `git --version` and `python3 --version`. Explain missing tools; do not
 install system software without permission. Run commands from the repository root:
@@ -38,8 +38,8 @@ special command. Handle an unrelated explicit request first, and honor requests 
 setup. Read the checklist in this skill even if local status is complete; resume unfinished steps without
 repeating completed work.
 
-Start with the auto-save choice below. Ask no other question until it is answered or the user
-explicitly defers it. Then, if no company source is supplied, ask:
+Start with the company source. Do not check GitHub saving capability or ask about auto-save
+before company research. If no company source is supplied, ask:
 "Share your company website, storefront, or social profile and I'll build the company overview."
 Wait for that required input before researching; do not create placeholder company facts. If a link
 or description is already supplied, use it and proceed without asking again. On partial setup,
@@ -58,10 +58,10 @@ Number option labels in question tools too. Accept either the number or the opti
 answer. Show only real choices; do not add options just to reach four. Keep one question at a time.
 For example:
 
-Would you like to enable auto-save?
+Add this verified connection to CONNECTIONS.md?
 
-1. Connect GitHub and save changes to a remote repository.
-2. Leave auto-save off.
+1. Add the connection.
+2. Skip for now.
 
 Company input is required; GitHub and auto-save are optional. Use the first-run prompt above only
 when the company source is missing. Reuse a link supplied in chat or saved setup state. A social profile alone is enough; do not require
@@ -112,13 +112,14 @@ as an implicit part of setup.
 
 Use tracked [SETUP-CHECKLIST.md](SETUP-CHECKLIST.md) as the shared progress record, in order:
 
-1. Set up auto-save.
-2. Research company (COMPANY.md).
-3. Review available connections.
+1. Research company (COMPANY.md).
+2. Review available connections.
+3. Mention optional auto-save.
 
 Update its checkboxes after each step; setup authorization covers these progress updates.
-Add a short outcome or next-action note to the same item when useful. Explicitly choosing off
-completes the auto-save choice; deferred or unanswered steps stay unchecked. Never store secrets,
+Add a short outcome or next-action note to the same item when useful. Delivering the optional
+auto-save note completes that item; it does not require a reply or enable saving. Record off or
+deferred honestly, without treating silence as a refusal or consent. Never store secrets,
 credential values, or machine-specific saving settings in this file. Checkmarks do not authorize
 commits, pushes, or access on another machine; local preferences still live in `.brain/setup.json`.
 
@@ -214,30 +215,29 @@ python3 skills/eb-setup/scripts/setup_state.py record-profile
 This records a saved profile, not user approval. If the profile or company answers change, record
 it again after reconciling them. Preserve uncertainty even if the user later approves the profile.
 
-## Explain and offer auto-save
+## Optional auto-save note
 
-As the first setup step, run the read-only GitHub capability check below before asking about
-auto-save. Report the connected account (or not connected), private repository creation status
-(available, unavailable, or unverified), and any known push limitation. Then explain auto-save
-and ask whether to set it up. Do not skip the offer because GitHub is optional. Skip repeating the offer only if the user already answered, the offer was
-already made in this setup, or saving is already configured; inspect saved preferences and the
-`auto_save_offer` checklist note when resuming.
+After the company profile and connection review are complete or explicitly deferred, add one
+short note to the completion message:
 
-Use the actual check results in a short offer. When creation is verified, for example:
-"GitHub is connected as <account>, and I can create a private repo. Auto-save keeps a history of
-completed work and backs it up there. Would you like to connect a GitHub repo for auto-save,
-or leave auto-save off?"
+“Auto-save is off. A repository can keep a history and backup of your work; I can help you create
+or connect one whenever you’re ready.”
 
-If creation is unavailable or unverified, state that plainly and offer only supported choices,
-including a manually created repository as described below. A connected account alone is not
-proof of repo creation or push access. Keep the offer to one question. Confirm the repo and branch
-before creation; if the company is not known yet, collect its source before proposing a name.
+This is an invitation, not another required setup question. Do not present an on/off menu, inspect
+GitHub creation or push capability, or hold completion waiting for a response. Most users can
+finish here. If the user already chose off or skipped saving, simply say “Auto-save is off” without
+repeating the invitation. If saving is already verified and enabled, report that actual state.
+Never disable an existing authorized preference merely because this flow defaults to off.
 
-Present those choices through the host's question tool or ordinary chat as the only question.
-Wait for the user's answer or explicit deferral before continuing setup, including when the
-question tool is asynchronous. Mark `auto_save_offer` done only when the explanation and
-question have actually been delivered. Record an unanswered offer as unanswered, not a refusal;
-saving remains off unless the user enables it.
+Mark `auto_save_offer` done after delivering the note, recording what was actually said. Keep
+saving off unless explicitly requested. On resume, do not repeat a delivered note or reopen
+company onboarding because GitHub is unconfigured. A skipped or deferred saving setup is not a
+blocker to using the company workspace.
+
+Only when the user asks for help with a repository or enabling auto-save, run the capability check
+below and guide them through supported choices one at a time. Reuse an explicit earlier request;
+do not ask whether they want saving again. Unless they request saving first, finish company
+research and connection review before starting this optional configuration.
 
 Auto-save has two modes: commits with GitHub pushes, or off. Never offer local-only automatic
 commits. If GitHub is chosen, verify the destination and push access before enabling both
@@ -250,7 +250,7 @@ Follow eb-auto-save for subsequent saves.
 
 ### GitHub capability check
 
-Before the initial auto-save question, inspect available GitHub tools and existing authentication
+When the user requests repository or auto-save help, inspect GitHub tools and authentication
 without asking the user whether access exists. Prefer a connected GitHub tool if it supports the
 needed operation; otherwise check an installed GitHub CLI (`gh auth status`, then `gh api user`)
 and the local Git transport. Never print tokens, credential files, or secret values.
@@ -384,8 +384,8 @@ Run the skill checker and setup status. Resolve missing answers, then run:
 python3 skills/eb-setup/scripts/setup_state.py complete
 ```
 
-If Git identity or authentication is missing, company setup may still finish with push disabled;
-report saving as unavailable. Do not call connectivity successful without checking it. Follow
+Company setup may finish with auto-save off without checking GitHub authentication. If requested
+saving configuration failed, report that limitation briefly. Do not call connectivity successful without checking it. Follow
 [eb-auto-save](../eb-auto-save/SKILL.md) for any authorized save. Report the company profile path
 and a brief summary (about 3–5 bullets) of what the company sells, industry/customers, pricing,
 and important gaps. Link COMPANY.md instead of reproducing it. State any inferred findings and
@@ -399,6 +399,6 @@ explanations. Still run the required checks and save their evidence. If a check 
 only the practical effect and any action the user needs to take. After an answer, perform the
 approved work without repeating the plan; report its outcome when done.
 
-Invite corrections without making a response necessary for completion. Deliver the auto-save
-explanation and question above if not already offered, as the only question. Local profile
+Invite corrections without making a response necessary for completion. Include the optional
+auto-save note above when appropriate; do not end setup with a required saving question. Local profile
 completion alone does not mean setup is finished. Do not schedule jobs.

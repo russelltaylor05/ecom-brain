@@ -21,7 +21,7 @@ CHECKLIST = {
     'customers': ('Intended customers and use cases', False),
     'markets': ('Markets served and sales model', False),
     'sources': ('Sources and dates recorded', False),
-    'auto_save_offer': ('Auto-save explained and setup offered', True),
+    'auto_save_offer': ('Optional auto-save note delivered', True),
     'github_repository': ('GitHub repository verified for this project', True),
 }
 CHECKLIST_STATUSES = {'pending', 'in_progress', 'done', 'unavailable', 'deferred'}
@@ -52,7 +52,7 @@ def checklist_status(root, state):
         result[key] = {'label': label, 'optional': optional,
                        **state.get('checklist', {}).get(key, {
                            'status': 'deferred' if optional and key != 'auto_save_offer' else 'pending',
-                           'note': ('Explain auto-save and ask once; enabling it is optional.'
+                           'note': ('Mention optional auto-save at completion; no answer required.'
                                     if key == 'auto_save_offer' else
                                     'Optional follow-up; outside basic setup.' if optional else 'Not recorded yet.'),
                        })}
