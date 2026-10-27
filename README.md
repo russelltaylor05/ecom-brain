@@ -1,6 +1,20 @@
 # Brain Skeleton
 
-## Set up with your agent
+## What this project is
+
+A company workspace that gives your AI coding agent a shared memory and reusable workflows.
+It keeps your company profile, research, connected-account notes, and skills in readable files
+that you own and can build on over time.
+
+Start with your company URL. Your agent researches the business, saves a sourced overview, and
+guides you through optional connections one question at a time. Auto-save stays off unless you
+choose to connect your own repository.
+
+Bring a coding agent with file and terminal access, plus Git and Python 3.9+. Public web access
+helps with research; you can also provide company information directly. No paid API, business
+integration, or background service is required.
+
+## Copy-and-paste install
 
 Copy this prompt into your coding agent:
 
@@ -13,15 +27,10 @@ it. Otherwise continue in the current context with the new folder as your workin
 do not claim the context was reset. In either case, read the downloaded project's AGENTS.md
 and the startup files it references before beginning setup. Follow those project instructions
 and skills/eb-setup/SKILL.md. Ask me one question at a time and wait for my answer.
-Keep auto-save off unless I
-explicitly enable it and we verify a repository I control. Finish by showing me the local
+Keep auto-save off unless I explicitly enable it and we verify a repository I control.
+Finish by showing me the local
 project path and how to reopen it.
 ```
-
-A small, company-agnostic workspace for an AI agent to maintain company knowledge and project
-skills. Bring your own coding agent with file and terminal access. Public web access helps build
-the company profile; manual setup works without it. Git and Python 3.9+ are the only local tools
-required. No paid API, business integration, or background service is required.
 
 ## Start here
 
