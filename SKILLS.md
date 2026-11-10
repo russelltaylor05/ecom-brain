@@ -7,5 +7,5 @@
 - [eb-knowledge-updates](skills/eb-knowledge-updates/SKILL.md): propose company and connection
   updates, maintain skill knowledge, and keep saved profile state current.
 - [evans-content-studio](skills/evans-content-studio/SKILL.md): prefill a saved intake, calibrate voice, and generate short-form video scripts.
-- [eb-vibe-editing](skills/eb-vibe-editing/SKILL.md): set up Vibe Editing and render local
+- [eb-maddexritter-rgb](skills/eb-maddexritter-rgb/SKILL.md): set up Vibe Editing and render local
   captioned vertical clips without API keys, using supplied word timestamps and cuts.
