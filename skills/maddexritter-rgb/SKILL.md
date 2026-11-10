@@ -1,5 +1,5 @@
 ---
-name: eb-maddexritter-rgb
+name: maddexritter-rgb
 description: Set up Vibe Editing and render local captioned vertical clips without API keys, using supplied word timestamps and cuts.
 ---
 
@@ -13,9 +13,9 @@ Run commands from the company workspace root. Resolve the script relative to thi
 host opened it through a discovery link. Keep runtime files and generated media in root `tmp/`.
 
 ```sh
-python3 skills/eb-maddexritter-rgb/scripts/vibe.py setup
-tmp/vibe-editing/.venv/bin/python skills/eb-maddexritter-rgb/scripts/vibe.py doctor
-tmp/vibe-editing/.venv/bin/python skills/eb-maddexritter-rgb/scripts/vibe.py smoke
+python3 skills/maddexritter-rgb/scripts/vibe.py setup
+tmp/vibe-editing/.venv/bin/python skills/maddexritter-rgb/scripts/vibe.py doctor
+tmp/vibe-editing/.venv/bin/python skills/maddexritter-rgb/scripts/vibe.py smoke
 ```
 
 Setup downloads the pinned source and installs Pillow and FFmpeg in a private environment. It does
@@ -31,7 +31,7 @@ timeline. The agent can supply caption emphasis. Automatic transcription and fac
 outside this local mode. Inspect the framing and captions before calling a real edit complete.
 
 ```sh
-tmp/vibe-editing/.venv/bin/python skills/eb-maddexritter-rgb/scripts/vibe.py render \
+tmp/vibe-editing/.venv/bin/python skills/maddexritter-rgb/scripts/vibe.py render \
   --project tmp/my-clip
 ```
 

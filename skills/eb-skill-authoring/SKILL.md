@@ -8,8 +8,8 @@ description: Add or maintain portable project skills, their index, and discovery
 Keep each capability in `skills/<name>/SKILL.md` with YAML `name` and `description`. Use lowercase
 letters, digits, and single hyphens, at most 64 characters. Prefix every packaged project skill
 name with `eb-`, including its directory, frontmatter name, index label, and discovery link.
-The user-named `evans-content-studio` is an explicit exception; preserve that name. Explain when the skill applies and
-include only guidance that helps carry out that capability.
+Preserve user-named exceptions listed in [the skill checker](scripts/check-skills.py). Explain
+when the skill applies and include only guidance that helps carry out that capability.
 
 Add scripts, tests, references, or assets only when needed. Link supporting files from the skill.
 Keep generated files under root tmp/. All skills must follow AGENTS.md's shared company knowledge

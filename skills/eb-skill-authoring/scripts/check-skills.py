@@ -5,13 +5,15 @@ import re
 import sys
 
 root = Path(__file__).resolve().parents[3]
+UNPREFIXED_SKILLS = {'evans-content-studio', 'maddexritter-rgb'}
+
 errors = []
 index = (root / 'SKILLS.md').read_text()
 for folder in sorted((root / 'skills').iterdir()):
     if not folder.is_dir():
         continue
     entry = folder / 'SKILL.md'
-    if not folder.name.startswith('eb-') and folder.name != 'evans-content-studio':
+    if not folder.name.startswith('eb-') and folder.name not in UNPREFIXED_SKILLS:
         errors.append(f'Missing eb- prefix: {folder.name}')
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', folder.name) or len(folder.name) > 64:
         errors.append(f'Invalid skill name: {folder.name}')
